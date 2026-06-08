@@ -1,10 +1,12 @@
 const express = require("express");
+const path = require("path");
 
 const app = express();
+
 const PORT = 3000;
 
 app.get("/", (req, res) => {
-    res.send("Welcome to CyberWatch Dashboard!");
+    res.sendFile(path.join(__dirname, "../views/index.html"));
 });
 
 app.listen(PORT, () => {
