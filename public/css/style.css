@@ -19,7 +19,7 @@ h1 {
 }
 
 main {
-    padding: 30px;
+    padding: 20px;
 }
 
 section {
@@ -34,14 +34,55 @@ h2, h3 {
     color: #ffffff;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
 }
 
-li {
+.card {
     background-color: #0f172a;
-    margin: 10px 0;
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card h4 {
+    color: #9ca3af;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #00ff66;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.alert-card p {
+    color: #ff4d4d;
+}
+
+/* Login Activity Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #0f172a;
+    color: #00ff66;
     padding: 12px;
-    border-left: 4px solid #00ff66;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-top: 1px solid #1f2937;
+}
+
+tr:hover {
+    background-color: #16213e;
 }

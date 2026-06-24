@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberWatch Dashboard</title>
+
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -14,20 +15,79 @@
     </header>
 
     <main>
+
         <section>
             <h2>System Status</h2>
-            <p>Monitoring Active</p>
+            <p>🟢 Monitoring Active</p>
         </section>
 
         <section>
             <h3>Security Summary</h3>
-            <ul>
-                <li>Total Login Attempts: 0</li>
-                <li>Successful Logins: 0</li>
-                <li>Failed Logins: 0</li>
-                <li>Alerts: 0</li>
-            </ul>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <h4>Total Login Attempts</h4>
+                    <p>0</p>
+                </div>
+
+                <div class="card">
+                    <h4>Successful Logins</h4>
+                    <p>0</p>
+                </div>
+
+                <div class="card">
+                    <h4>Failed Logins</h4>
+                    <p>0</p>
+                </div>
+
+                <div class="card alert-card">
+                    <h4>Active Alerts</h4>
+                    <p>0</p>
+                </div>
+
+            </div>
         </section>
+
+        <section>
+            <h3>Recent Login Activity</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>IP Address</th>
+                        <th>Status</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>admin</td>
+                        <td>192.168.1.10</td>
+                        <td>Success</td>
+                        <td>10:30 AM</td>
+                    </tr>
+
+                    <tr>
+                        <td>guest</td>
+                        <td>192.168.1.25</td>
+                        <td>Failed</td>
+                        <td>10:45 AM</td>
+                    </tr>
+
+                    <tr>
+                        <td>admin</td>
+                        <td>192.168.1.10</td>
+                        <td>Success</td>
+                        <td>11:00 AM</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
     </main>
 
 </body>
