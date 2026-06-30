@@ -11,16 +11,18 @@
 
     <header>
         <h1>CyberWatch Dashboard</h1>
-        <p>Cybersecurity Monitoring System</p>
+        <p>Cybersecurity Monitoring & Threat Detection System</p>
     </header>
 
     <main>
 
+        <!-- System Status -->
         <section>
             <h2>System Status</h2>
             <p>🟢 Monitoring Active</p>
         </section>
 
+        <!-- Dashboard Summary -->
         <section>
             <h3>Security Summary</h3>
 
@@ -49,10 +51,13 @@
             </div>
         </section>
 
+        <!-- Recent Login Activity -->
         <section>
+
             <h3>Recent Login Activity</h3>
 
             <table>
+
                 <thead>
                     <tr>
                         <th>User</th>
@@ -63,6 +68,7 @@
                 </thead>
 
                 <tbody>
+
                     <tr>
                         <td>admin</td>
                         <td>192.168.1.10</td>
@@ -83,8 +89,29 @@
                         <td>Success</td>
                         <td>11:00 AM</td>
                     </tr>
+
                 </tbody>
+
             </table>
+
+        </section>
+
+        <!-- Security Alerts -->
+        <section>
+
+            <h3>Security Alerts</h3>
+
+            <div class="alert warning">
+                <strong>Medium</strong> — Multiple failed login attempts detected from IP <strong>192.168.1.25</strong>
+            </div>
+
+            <div class="alert danger">
+                <strong>High</strong> — Possible brute-force attack detected on the <strong>admin</strong> account.
+            </div>
+
+            <div class="alert success">
+                <strong>Low</strong> — No critical security incidents detected.
+            </div>
 
         </section>
 

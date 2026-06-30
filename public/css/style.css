@@ -18,8 +18,14 @@ h1 {
     margin: 0;
 }
 
+header p {
+    color: #9ca3af;
+}
+
 main {
     padding: 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 section {
@@ -30,8 +36,9 @@ section {
     margin-bottom: 20px;
 }
 
-h2, h3 {
-    color: #ffffff;
+h2,
+h3 {
+    color: white;
 }
 
 .card-container {
@@ -42,10 +49,10 @@ h2, h3 {
 
 .card {
     background-color: #0f172a;
-    border: 1px solid #1f2937;
-    border-radius: 12px;
+    border-radius: 10px;
     padding: 20px;
     text-align: center;
+    border: 1px solid #1f2937;
 }
 
 .card h4 {
@@ -62,8 +69,6 @@ h2, h3 {
 .alert-card p {
     color: #ff4d4d;
 }
-
-/* Login Activity Table */
 
 table {
     width: 100%;
@@ -85,4 +90,29 @@ td {
 
 tr:hover {
     background-color: #16213e;
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.warning {
+    background-color: #4d3a00;
+    color: #ffd54f;
+    border-left: 5px solid #ffc107;
+}
+
+.danger {
+    background-color: #4a1111;
+    color: #ff6b6b;
+    border-left: 5px solid #ff4d4d;
+}
+
+.success {
+    background-color: #0b3d1d;
+    color: #66ff99;
+    border-left: 5px solid #00ff66;
 }
